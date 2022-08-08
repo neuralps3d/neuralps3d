@@ -54,4 +54,5 @@ python demo.py --gpu GPU_ID
 ## Training
 The training code will be released once ready.
 
-
+## Acknowledgement
+This code is based on the awesome [UNISURF](https://github.com/autonomousvision/unisurf).
