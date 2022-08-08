@@ -1,0 +1,24 @@
+model:
+  num_layers: 8
+  hidden_dim: 256
+  octaves_pe: 6
+  skips: [4]
+  geometric_init: True
+  feat_size: 256
+  rescale: 1.0
+  light_int: 8 
+rendering:
+  type: unisurf
+  n_max_network_queries: 64000
+  white_background: True
+  near: 1
+  far : 20
+  radius: 6.0
+  interval_start: 3.0 
+  interval_end: 3.0
+  interval_decay: 0.000015
+  num_points_in: 64
+  num_points_out: 32
+  ray_marching_steps: 256
+  occ_prob_points: 64
+  vis_steps: 256
