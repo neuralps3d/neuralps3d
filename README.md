@@ -1,7 +1,12 @@
 # Neural Reflectance Field from Shading and Shadow under a Fixed Viewpoint
+<p align="center">
+    <img src='images/render_light_ours_all.gif' width="800">
+</p>
+
 ## Overview
+
 This Github repository stores the code for reproducing the experiments in "Neural Reflectance Field from Shading and Shadow under a Fixed Viewpoint". 
-At this time, we release the data of all real scenes and one synthetic scene, as well as the demo evaluation code.
+At this time, we release the data of [all real scenes](https://github.com/neuralps3d/neuralps3d/releases/download/v0.1/real_scene.zip) and [one synthetic scene](https://github.com/neuralps3d/neuralps3d/tree/main/dataset/bunny), as well as the demo evaluation code.
 The full code and datasets will be released as soon as possible. Please stay tuned!
 
 ## Abstract
@@ -23,10 +28,14 @@ In this paper, we address the "dual problem" of multi-view scene reconstruction 
 <b>Results on the real captured data.</b>
 </p>
 
-## Setup
-This method is implemented in PyTorch and tested with Ubuntu 18.04.
+## Datasets Download
+- [The Real Scenes](https://github.com/neuralps3d/neuralps3d/releases/download/v0.1/real_scene.zip)
+- [The Synthetic Bunny Scene](https://github.com/neuralps3d/neuralps3d/tree/main/dataset/bunny)
 
-- Python 3.8
+## Setup
+This method is implemented in PyTorch and tested with Ubuntu 18.04/20.04.
+
+- Python 3.9
 - PyTorch 1.80
 
 Please create an anaconda environment called `ps3d` to run this code.
@@ -36,7 +45,7 @@ conda activate ps3d
 ```
 
 ## Testing
-At this time, we provide the evaluation code for rendering the reconstructed synthetic scene.
+At this time, we provide the evaluation code for rendering the reconstructed synthetic [`BUNNY`](https://github.com/neuralps3d/neuralps3d/tree/main/dataset/bunny) scene.
 ```bash
 python demo.py --gpu GPU_ID
 # Please modify `--chunk **` according to your GPU memory
